@@ -1,0 +1,269 @@
+.footer{
+    color: #e2e7edf7;
+    margin:10px 20px;
+    font-family: sans-serif;
+    letter-spacing: 0.25px;
+    box-shadow: 0px 0px 35px #000;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #0f172a; /* preserved dark background */
+}
+
+.footer > h1 {
+    color: #fff;
+    margin-left: 45px;
+    font-size: 40px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.footer > span {
+    font-style: italic;
+    display: block;
+    margin-left: 45px;
+    margin-top: -10px;
+}
+
+.footer-widget {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+    margin: 20px 0;
+}
+
+#footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#footer-nav > h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#footer-nav > a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#footer-nav > a:hover {
+    text-decoration: underline;
+}
+
+#footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* tighter spacing between p elements */
+}
+
+#footer-contact > h2 {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+#footer-contact > p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    font-size: 0.95rem;
+    margin: 0; /* remove extra margin, controlled by gap */
+}
+
+#guarantee-logo {
+    text-align: center;
+    font-weight: 600;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#footer-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#react-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+#footer-icons > h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#footer-order-link {
+    display: inline-block;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: rgb(214, 64, 9);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#footer-order-link:hover {
+    background-color: orangered;
+}
+
+/* Bottom copyright */
+.footer > p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* ----------------- RESPONSIVE ----------------- */
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .footer {
+        margin: 10px 10px;
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+
+    .footer > h1 {
+        font-size: 28px;
+        display: block;
+        text-align: center;
+        margin: 0 auto 10px auto;
+        padding: 10px 0;
+    }
+
+    .footer > span {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .footer-widget {
+        flex-direction: row; /* keep Quick Links + Contact side by side */
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    #footer-nav, #footer-contact {
+        width: 45%;
+        text-align: center;
+    }
+
+    #guarantee-logo {
+        flex-direction: column;
+        font-size: 14px;
+        gap: 8px;
+    }
+
+    #footer-icons > h2 {
+        font-size: 16px;
+    }
+
+    #footer-order-link {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+/* Medium screens (tablet / small laptop) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .footer {
+        padding: 50px;
+    }
+    .footer > h1 {
+        font-size: 32px;
+        margin-left: 20px;
+    }
+
+    .footer-widget {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    #footer-nav, #footer-contact {
+        width: 45%;
+    }
+
+    #guarantee-logo {
+        font-size: 16px;
+    }
+
+    #footer-icons > h2 {
+        font-size: 18px;
+    }
+
+    #footer-order-link {
+        font-size: 15px;
+        padding: 10px 14px;
+    }
+}
+
+/* Extra large screens (big monitors) */
+@media (min-width: 1920px) {
+    .footer {
+        padding: 20px 200px;
+    }
+
+    .footer > h1 {
+        font-size: 50px;
+        margin-left: 50px;
+    }
+
+    .footer-widget {
+        gap: 50px;
+    }
+
+    #footer-nav, #footer-contact {
+        width: 45%;
+    }
+
+    #guarantee-logo {
+        font-size: 20px;
+        gap: 30px;
+    }
+
+    #footer-icons > h2 {
+        font-size: 22px;
+    }
+
+    #footer-order-link {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+}
+
+/* Tiny touch devices */
+@media (max-width: 480px) {
+    .footer-widget {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #footer-nav, #footer-contact {
+        width: 100%;
+    }
+  
+    #footer-contact p {
+        text-align: center;
+        display: block;
+        margin: 2px;
+    }
+
+    #guarantee-logo {
+        flex-direction: column;
+        font-size: 13px;
+    }
+
+    #footer-icons > h2 {
+        font-size: 14px;
+    }
+}

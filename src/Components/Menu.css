@@ -1,0 +1,771 @@
+
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MENU SECTIONS */
+.menu-sections {
+    text-align: center;
+    margin-top: 10px;
+}
+.menu-sections > #menu-section-list {
+    font-family: sans-serif;
+    font-size: larger;
+    display: inline-block;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #fff;
+}
+.menu-sections > span {
+    border: 1px solid #b1aaaa;
+    margin-left: 20px;
+}
+
+
+/* CTA ANIMATION */
+.menu-cta {
+    font-family: sans-serif;
+    color: #fff;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideIn 1s forwards ease-out;
+    animation-delay: 1.2s;
+}
+
+/* BUTTONS */
+.menu-cta  > #menu-cta-btn{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    background-color: #d52304f6;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    width: 150px;
+    transition: 0.5s;
+}
+.menu-cta  > #menu-cta-btn:hover {
+    background-color: #050505;
+    color: blue;
+    border: 1px solid blue;
+}
+
+/* ------------------- REST OF YOUR EXISTING CSS ------------------- */
+/* I didn’t touch any layout rules, widths, heights, margins, flex or responsive queries */
+html {
+    scroll-behavior: smooth;
+}
+.menu {
+    overflow-x: hidden;
+}
+.menu > img{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    object-fit: cover;
+    position: relative;
+}
+
+.menu-hero {
+    text-align: center;
+    position: relative;
+    margin-top: -200px;
+    color: #Fff;
+    text-align: center;
+    margin-bottom: 150px;
+}
+.menu-hero > h1 {
+    color: #Fff;
+}
+.menu-hero > p {
+    margin-top: -20px;
+    font-size: larger;
+    /* background-color: rgba(79, 86, 86, 0.5); */
+}
+#menu-hero-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(61, 61, 58, 0.67);
+    padding: 8px;
+    width: 150px;
+    font-family: sans-serif;
+    border: 1px solid #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-sections {
+    text-align: center;
+    margin-top: 10px;
+}
+.menu-sections > #menu-section-list {
+    font-family: sans-serif;
+    font-size: larger;
+    display: inline-block;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #Fff;
+}
+.menu-sections > span {
+    border: 1px solid #b1aaaa;
+    margin-left: 20px;
+}
+#to-pizza {
+    text-align: center;
+        padding: 20px;
+
+}
+#to-pizza > h2 {
+    color: #fff;
+    padding: 10px;
+}
+.pizza-card {
+    display: flex;
+    border: 1px solid #6d6c6c;
+    height: 200px;
+    margin-bottom: 20px;
+  background-color: #00000048;
+
+}
+.pizza-card > #pizza-img > img {
+    width: 250px;
+    height: 200px;
+}
+#pizza-info {
+    color: #fff;
+    padding-left: 30px;
+    text-align: start;
+    font-family: sans-serif;
+    position: relative;
+}
+
+
+#pizza-info > p{
+    color: #c9c7c7;
+}
+#pizza-info span, .side-card-info > p:last-of-type  {
+    font-weight: 800;
+    font-size: 20px;
+    color: #fff;
+}
+#pizza-info > button {
+    position: absolute;
+    right: -750px;
+    right: -550px;
+    top: 100px;
+    width: 150px;
+    cursor: pointer;
+    font-size: large;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px;
+    transition: 0.4s;
+}
+#pizza-info > button:hover {
+    background-color: transparent;
+    border: 1px solid #414040;
+} 
+#pizza-link {
+    text-decoration: none;
+    color: #c1bfbf;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pizza-link-last{
+    text-decoration: none;
+    color: #c1bfbf;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+#to-sides {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#side-h2{
+    color: #fff;
+    font-size: 40px;
+}
+.sides-card {
+    font-family: sans-serif;
+    color: #fff;
+    display: flex;
+    border: 1px solid #3b3b3b;
+    border-radius: 20px;
+    width: 500px;
+    height: 200px;
+}
+.side-card-img > img{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}
+.side-card-info {
+    text-align: start;
+    width: 100%;
+    padding-left: 20px;
+    background-color: #00000048;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+}
+.side-card-info > p {
+    font-weight: 800;
+    margin-left: 150px;
+}
+.side-card-info > button {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: large;
+    background-color: transparent;
+    background-color: #726d6d48;
+    border: 1px solid #ee5909;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    transition: 0.4s;
+}
+.side-card-info > button:hover {
+    background-color: transparent;
+    border: 1px solid #414040;
+} 
+#to-drinks {
+    text-align: center;
+    border: 1px solid #bfb3b3;
+    border-radius: 20px;
+    padding: 10px;
+}
+#to-drinks > h2 {
+    color: orangered;
+}
+#soft-drink-menu {
+    text-align: start;
+    display: block;
+    width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.drink-dot{
+    width: 500px;
+    border: 1px dotted #fff;
+    display: inline-block;
+}
+.drink-name {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 40px;
+}
+.drink-price {
+    color: #fff;
+    text-align: start;
+    /* display: inline; */
+    font-weight: 800;
+    font-size: larger;
+    margin-left: 40px;
+}
+#drinks-cocktails {
+    display: block;
+    text-align: start;
+}
+#drinks-cocktails > h2 {
+    margin-top: 50px;
+    color: orangered;
+}
+.cocktail-cards {
+    border: 1px solid #302f2f;
+    border-radius: 9px;
+    width: 270px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 430px ;
+    justify-content: space-around;
+    background-color: #00000048;
+    margin: 10px 50px;
+}
+.cocktail-cards > img {
+    width: 270px;
+    height: 200px;
+    border-radius: 9px;
+
+}
+.cocktail-card-info {
+    color: #fff;
+    text-align: start;
+    margin: 20px 30px;
+    font-family: sans-serif;
+}
+.cocktail-card-info > p {
+    margin-top: -10px;
+    padding: 3px;
+}
+.cocktail-card-info > p:last-of-type {
+    font-weight: 800;
+}
+.cocktail-card-info > button {
+    cursor: pointer;
+    font-size: large;
+    width: 170px;
+    background-color: #000000;
+    border: 1px solid rgba(250, 249, 249, 0.372);
+    border-radius: 7px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: 0.4s;
+}
+.cocktail-card-info > button:hover {
+    
+    background-color: transparent;
+    border: 1px solid #414040;
+} 
+.menu-cta {
+    /* border: 2px solid; */
+    font-family: sans-serif;
+    color: #fff;
+    padding: 20px;
+}
+.menu-cta  > #menu-cta-btn{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    background-color: #d52304f6;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    width: 150px;
+    transition: 0.5s;
+}
+.menu-cta  > #menu-cta-btn:hover {
+    background-color: #050505;
+    color: blue;
+    border: 1px solid blue;
+}
+
+
+
+
+/* Menu Page Responsive */
+/* @media (min-width: 2000px) {
+    
+} */
+
+@media (min-width: 1000px) {
+    #pizza-info > button {
+        left: 500px;
+    }
+    .cocktail-cards {
+        margin: 30px 50px;
+    }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+    .menu-hero {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 30px;
+    }
+
+    .menu-sections > #menu-section-list {
+        margin-left: 20px;
+        font-size: 1rem;
+    }
+
+    #to-pizza, #to-sides, #to-drinks {
+        padding: 10px;
+    }
+
+    .pizza-card{
+        height: 200px;
+        width: 100%;
+        margin: 30px auto;
+    }
+    .pizza-card > #pizza-img > img {
+        width: 250px;
+        height: 200px;
+    }
+    #pizza-info {
+        padding-left: 15px;
+        text-align: center;
+        position: static;
+    }
+
+    #pizza-info > button {
+        position: static;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    #to-sides {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sides-card {
+        display: flex;
+        width: 500px;
+        height: 250px;
+    }
+
+    .side-card-img > img {
+        width: 250px;
+        height: 250px;
+        border-radius: none;
+    }
+
+    .side-card-info {
+        width: 100%;
+        text-align: start;
+        padding: 35px 20px;
+    }
+    .side-card-info > p:last-of-type {
+        text-align: start;
+    }
+    .cocktail-cards {
+        width: 90%;
+        flex-direction: column;
+        height: auto;
+        margin: 15px auto;
+    }
+
+    .cocktail-cards {
+    border-radius: 9px;
+    width: 270px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+        height: 430px;
+        justify-content: space-around;
+    background-color: #00000048;
+    margin: 10px 15px;
+    }
+
+    .cocktail-card-info {
+        margin: 10px 15px;
+    }
+
+    #soft-drink-menu {
+        width: 95%;
+    }
+
+    #drinks-cocktails {
+        width: 95%;
+    }
+
+    #pizza-link, #pizza-link-last {
+        width: auto;
+        font-size: 1rem;
+    }
+
+    .menu-cta {
+        padding: 20px 10px;
+    }
+
+    #menu-cta-btn {
+        width: 80%;
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-hero > h1 {
+        font-size: 1.8rem;
+    }
+
+    .menu-hero > p {
+        font-size: 1rem;
+    }
+
+    .menu-sections > #menu-section-list {
+        font-size: 0.9rem;
+        margin-left: 10px;
+    }
+
+    #side-h2, #to-drinks > h2 {
+        font-size: 1.5rem;
+    }
+    .pizza-card, .sides-card{
+        width: 80%;
+        height: 50%;
+    }
+
+    .pizza-card > #pizza-img > img,
+    .side-card-img > img,
+    .cocktail-cards > img {
+        height: 100%;
+    }
+
+    #pizza-info > h2, .side-card-info > h2, .cocktail-card-info > h2 {
+        font-size: 1.2rem;
+    }
+
+    #pizza-info > p, .side-card-info > p, .cocktail-card-info > p {
+        font-size: 0.95rem;
+    }
+
+    #pizza-info > button, .side-card-info > button, .cocktail-card-info > button {
+        font-size: 0.9rem;
+        width: 90%;
+    }
+      #soft-drink-menu {
+        width: 100%;
+        display: flex;
+    }
+    #soft-drink-menu > .drink-dot{
+            height: 0.1px;
+            width: 300px;
+    }
+    .cocktail-cards {
+        width: 50%;
+        margin: 20px 40px;
+        height: 600px;
+    }
+    .cocktail-cards > img {
+        width: 100%;
+        height: 400px;
+    }
+}
+@media  screen and (max-width: 719px) {
+     .menu-hero {
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .menu-hero > h1 {
+        font-size: 1.5rem;
+    }
+
+    .menu-hero > p {
+        font-size: 0.9rem;
+    }
+
+    #to-pizza, #to-sides, #to-drinks {
+        padding: 5px;
+    }
+      .pizza-card{
+        flex-direction: column;
+        height: auto;
+        width: 70%;
+        border-radius: 30px;
+        margin: 30px auto;
+    }
+    .pizza-card > #pizza-img > img {
+        width: 90%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    #pizza-info {
+        padding-left: 15px;
+        text-align: center;
+        position: static;
+    }
+
+    #pizza-info > button {
+        position: static;
+        width: 80%;
+        margin: 10px auto;
+    }
+    #pizza-info > p > span,  .side-card-info > p:last-of-type {
+        font-weight: 800;
+        font-size: 30px;
+    } 
+    .pizza-card, .sides-card, .cocktail-cards {
+        flex-direction: column;
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+    }
+    .sides-card img {
+        border-radius: 20px;
+        width: 90%;
+        height: 400px;
+    }
+    #pizza-info, .side-card-info {
+        padding: 20px;
+        text-align: center;
+    }
+
+    #pizza-info > button, .side-card-info > button, .cocktail-card-info > button {
+        width: 80%;
+        margin: 5px auto;
+        font-size: 0.85rem;
+    }
+
+  
+    #drinks-cocktails {
+        width: 100%;
+    }
+    .cocktail-cards {
+        width: 70%;
+    }
+    .cocktail-cards > img {
+        width: 100%;
+    }
+    .menu-cta {
+        padding: 15px 5px;
+    }
+
+    #menu-cta-btn {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 480px){
+    .menu > img{
+        display: none;
+    }
+    .menu-hero {
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .menu-hero > h1 {
+        font-size: 1.5rem;
+    }
+
+    .menu-hero > p {
+        font-size: 0.9rem;
+    }
+
+    #to-pizza, #to-sides, #to-drinks {
+        padding: 5px;
+    }
+      .pizza-card{
+        flex-direction: column;
+        height: auto;
+        width: 70%;
+        border-radius: 30px;
+        margin: 30px auto;
+    }
+    .pizza-card > #pizza-img > img {
+        width: 90%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    #pizza-info {
+        padding-left: 15px;
+        text-align: center;
+        position: static;
+    }
+
+    #pizza-info > button {
+        position: static;
+        width: 80%;
+        margin: 10px auto;
+    }
+    #pizza-info > p > span,  .side-card-info > p:last-of-type {
+        font-weight: 800;
+        font-size: 30px;
+    } 
+    .pizza-card, .sides-card, .cocktail-cards {
+        flex-direction: column;
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+    }
+    .sides-card img {
+        border-radius: 20px;
+        width: 90%;
+        height: 400px;
+    }
+    #pizza-info, .side-card-info {
+        padding: 20px;
+        text-align: center;
+    }
+
+    #pizza-info > button, .side-card-info > button, .cocktail-card-info > button {
+        width: 80%;
+        margin: 5px auto;
+        font-size: 0.85rem;
+    }
+
+    #soft-drink-menu {
+        width: 100%;
+        display: flex;
+    }
+    #soft-drink-menu > .drink-dot{
+            /* border-bottom: 2px solid #fff; */
+            height: 0.1px;
+            width: 200px;
+    }
+    #drinks-cocktails {
+        width: 100%;
+    }
+    .cocktail-cards {
+        width: 70%;
+    }
+    .cocktail-cards > img {
+        width: 100%;
+    }
+    .menu-cta {
+        padding: 15px 5px;
+    }
+
+    #menu-cta-btn {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* MEDIA QUERIES ARE LEFT INTACT, ANIMATION WILL STILL WORK RESPONSIVELY */
+
+
+
+
+/* CARDS ANIMATION */
+.pizza-card, .sides-card, .cocktail-cards, #soft-drink-menu {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s forwards ease-out;
+}
+
+/* staggered delays for pizza cards */
+.pizza-card:nth-child(1) { animation-delay: 0.2s; }
+.pizza-card:nth-child(2) { animation-delay: 0.4s; }
+.pizza-card:nth-child(3) { animation-delay: 0.6s; }
+.pizza-card:nth-child(4) { animation-delay: 0.8s; }
+.pizza-card:nth-child(5) { animation-delay: 1s; }
+
+/* staggered delays for sides cards */
+.sides-card:nth-child(1) { animation-delay: 0.2s; }
+.sides-card:nth-child(2) { animation-delay: 0.4s; }
+.sides-card:nth-child(3) { animation-delay: 0.6s; }
+
+/* staggered delays for cocktails */
+.cocktail-cards:nth-child(1) { animation-delay: 0.2s; }
+.cocktail-cards:nth-child(2) { animation-delay: 0.4s; }
+.cocktail-cards:nth-child(3) { animation-delay: 0.6s; }
+
+/* staggered delays for soft drinks */
+#soft-drink-menu:nth-child(1) { animation-delay: 0.2s; }
+#soft-drink-menu:nth-child(2) { animation-delay: 0.4s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+

@@ -1,0 +1,211 @@
+/* ===== LAYOUT ===== */
+#checkout-container {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 850px);
+    gap: clamp(20px, 4vw, 60px);
+    padding: clamp(20px, 4vw, 60px);
+    align-items: start;
+
+    /* PAGE ANIMATION */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideIn 0.8s forwards ease-out;
+}
+
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* LEFT COLUMN */
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(30px, 5vw, 60px);
+}
+
+/* TITLE */
+.col {
+    color: #fff;
+    font-family: sans-serif;
+    text-align: left;
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s forwards ease-out;
+    animation-delay: 0.1s;
+}
+
+.col h1 {
+    font-size: clamp(26px, 4vw, 42px);
+}
+
+.col p {
+    font-size: clamp(14px, 2vw, 18px);
+    opacity: 0.85;
+}
+
+/* ===== CHECKOUT CARD ===== */
+.checkout {
+    font-family: sans-serif;
+    padding: clamp(20px, 4vw, 35px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: #0f172a;
+    color: #fff;
+
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s forwards ease-out;
+    animation-delay: 0.2s;
+}
+
+.checkout h3 {
+    font-size: clamp(18px, 2.5vw, 22px);
+    border-bottom: 2px solid #f97316;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+/* FORM STRUCTURE */
+.del-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-flex,
+.city-code {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* INPUTS */
+.checkout label {
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+.checkout input {
+    width: 100%;
+    height: 36px;
+    padding: 0 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: #020617;
+    color: #e5e7eb;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.checkout input:focus {
+    border-color: #f97316;
+    box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.25);
+}
+
+/* ===== PAYMENT ===== */
+.checkout-payment {
+    background: #0f172a;
+    padding: clamp(20px, 4vw, 30px);
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.55);
+    color: #94a3b8;
+
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s forwards ease-out;
+    animation-delay: 0.4s;
+}
+
+.checkout-payment h2 {
+    font-size: clamp(18px, 2.5vw, 22px);
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#payments-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 15px;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+#payments-info input {
+    height: 34px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.15);
+    background-color: #020617;
+    color: #fff;
+    padding-left: 10px;
+}
+
+/* PAYMENT METHOD */
+.payment_METHOD {
+    margin-top: 15px;
+    font-size: 0.85rem;
+}
+
+/* CHECKOUT BUTTON */
+#final-checkout-btn {
+    margin-top: 30px;
+    align-self: center;
+    width: clamp(220px, 40vw, 360px);
+    height: 44px;
+    border-radius: 999px;
+    border: 2px solid orangered;
+    background-color: #020617;
+    color: orangered;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s forwards ease-out;
+    animation-delay: 0.6s;
+}
+
+#final-checkout-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(249,115,22,0.4);
+}
+
+/* FADE UP ANIMATION KEYFRAMES */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+    #checkout-container {
+        grid-template-columns: 1fr;
+    }
+
+    .input-flex,
+    .city-code {
+        grid-template-columns: 1fr;
+    }
+
+    #payments-info {
+        grid-template-columns: 1fr;
+    }
+
+    .col {
+        text-align: center;
+    }
+
+    #final-checkout-btn {
+        margin: 20px auto;
+    }
+}

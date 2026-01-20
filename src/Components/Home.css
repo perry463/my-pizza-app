@@ -1,0 +1,26 @@
+ body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* background-color: #121212; */
+  background-color: #0e1320;
+  }
+  #home-h2 {
+    color: #e2e7edf7;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: 30px;
+  }
+    #home-h1 {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+      color: #e2e7edf7;
+} 
+@media (max-width: 764px) {
+  #home-h1 {
+    font-size: 40px;
+  }
+}

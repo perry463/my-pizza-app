@@ -1,0 +1,394 @@
+/* =========================
+   GLOBAL SAFETY RESET
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* =========================
+   PAGE WRAPPER
+========================= */
+.about-page {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* =========================
+   HERO
+========================= */
+#about-section-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center bottom;
+  display: block;
+}
+
+.about-section-info {
+  margin-top: -170px;
+  position: relative;
+  z-index: 2;
+}
+
+.about-section-info h1 {
+  color: #fff;
+}
+
+.about-section-info p {
+  font-weight: 700;
+  color: aliceblue;
+}
+
+/* =========================
+   STORY / INGREDIENTS
+========================= */
+.about-story-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 6%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  flex-wrap: wrap; /* 🔑 stops overflow */
+}
+
+.about-story-details {
+  flex: 1 1 420px;
+  max-width: 550px;
+  text-align: center;
+}
+.about-story-details h1 {
+    color: orangered;
+}
+
+.about-story-details p {
+  line-height: 30px;
+  margin: 0;
+}
+
+.about-story-img {
+  flex: 1 1 420px;
+  max-width: 500px;
+}
+
+.about-story-img img {
+  width: 100%;
+  height: 300px;
+  border-radius: 17px;
+  border: 5px solid #9d9b9b;
+  box-shadow: 0px 0px 35px #000;
+  display: block;
+}
+
+/* =========================
+   TEAM
+========================= */
+#cardH1 {
+  color: #faf9f9;
+  font-size: 50px;
+  margin: 4rem 0 2rem;
+}
+
+/* Card */
+.about-card {
+  display: inline-block;
+  background-color: rgba(232, 237, 236, 0.566);
+  width: 300px;
+  padding: 20px;
+  border-radius: 26px;
+  margin: 20px;
+  vertical-align: top;
+}
+
+.about-card img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #e2e2e2;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.about-card h2 {
+  color: #000104;
+}
+
+.about-card p {
+  font-weight: 800;
+  color: rgb(5, 25, 45);
+}
+
+/* =========================
+   ABOUT BRAND
+========================= */
+#about-brand {
+  padding: 3rem 6%;
+}
+
+#about-brand h1 {
+  color: #fff;
+}
+
+#about-brand p {
+  color: #c7c4c4;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* =========================
+   CONTACT CTA
+========================= */
+.about-contact-cta {
+  padding: 50px;
+  text-align: center;
+}
+
+.about-contact-cta p {
+  margin-bottom: 35px;
+  color: #fff;
+}
+
+#contact-link {
+  padding: 12px 28px;
+  background: orangered;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+    /* =========================
+   LARGE SCREEN / DESKTOP
+========================= */
+
+/* @media (min-width: 1200 */
+
+@media (max-width: 1200px) {
+  #about-section-img {
+    display: none;
+  }
+
+  .about-section-info {
+    margin-top: 20px;
+  }
+
+  .about-section-info p {
+    font-size: 12px;
+    max-width: 300px;
+    margin: auto;
+  }
+}
+
+        /* =========================
+   TABLET FIX (iPad Mini / Air)
+========================= */
+@media (max-width: 900px) {
+  .about-story-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 6%;
+    gap: 1.5rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;    
+  }
+    #cardH1 {
+    margin-top: -190px;
+  }
+
+  /* .about-story-details {
+    max-width: 650px;
+    height: 150px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin:  auto;
+  } */
+      .about-story-details {
+    max-width: 650px;
+    height: auto;       /* allow text to grow naturally */
+    padding-bottom: 0;  /* remove extra bottom padding */
+    text-align: center;
+    margin: auto;
+  }
+.about-story-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* better than center for text+image closeness */
+    gap: 1.5rem; /* consistent spacing for all story sections */
+}
+
+  .about-story-img {
+    max-width: 750px;
+    margin: 0auto;
+  }
+
+  .about-story-img img {
+    width: 550px;
+    height: 400px;
+  }
+  #about-brand > p {
+    font-size: 10px;
+    padding: 10px;
+
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .about-story-section {
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 5%;
+  }
+
+  .about-story-img,
+  .about-story-details {
+    width: 100%;
+    height: auto;
+  }
+  .about-story-img img{
+    width: 100%;
+    margin: auto;
+}
+
+  .about-card {
+    width: 90%;
+    margin: 15px auto;
+  }
+
+  #cardH1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-section-info p {
+    font-size: 1rem;
+    display: none;
+  }
+  .about-story-section {
+    width: 100%;
+    padding: 10px;
+    /* height: 300px; */
+  }
+   
+  .about-story-img{
+    width: 100%;
+    height: 300px;
+  }
+  .about-story-img img {
+    width: 100%;
+    height: 400px;
+  }
+
+  #cardH1 {
+    margin-top: -100px;
+  }
+  
+  #about-brand h1 {
+    font-size: 1.5rem;
+  }
+
+  #about-brand p {
+    font-size: 0.85rem;
+  }
+}
+/* ===== KEYFRAMES ===== */
+@keyframes fadeDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeLeft {
+  0% { opacity: 0; transform: translateX(-20px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeRight {
+  0% { opacity: 0; transform: translateX(20px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* ===== HERO / ABOUT HEADING ===== */
+.about-section-info h1 {
+  animation: fadeDown 1s ease forwards;
+}
+.about-section-info p {
+  animation: fadeDown 1s ease 0.3s forwards;
+  opacity: 0;
+}
+
+/* ===== STORY SECTIONS ===== */
+.about-story-details {
+  opacity: 0;
+  animation: fadeLeft 1s ease forwards;
+}
+
+.about-story-section:nth-child(3) .about-story-details {
+  animation: fadeRight 1s ease forwards;
+}
+
+.about-story-img {
+  opacity: 0;
+  animation: fadeRight 1s ease forwards;
+}
+
+.about-story-section:nth-child(3) .about-story-img {
+  animation: fadeLeft 1s ease forwards;
+}
+
+/* ===== TEAM CARDS ===== */
+.about-card {
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.about-card:nth-child(2) { animation-delay: 0.4s; }
+.about-card:nth-child(3) { animation-delay: 0.6s; }
+.about-card:nth-child(4) { animation-delay: 0.8s; }
+
+/* ===== ABOUT BRAND & CONTACT CTA ===== */
+#about-brand {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.about-contact-cta {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.4s;
+}

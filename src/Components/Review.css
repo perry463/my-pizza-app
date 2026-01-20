@@ -1,0 +1,22 @@
+.reviews {
+    font-family: sans-serif;
+    margin-bottom: 100px;
+}
+.reviews > h1  {
+    font-size: 45px;
+    color: #e2e7edf7;
+    text-align: center;
+}
+.reviews > h2 {
+    color: #be6f25f7;
+    margin-left: 20px;
+}
+.reviews > #review-card {
+    border: 2px solid #5a5e62f7;
+    border-top-left-radius: 130px;
+      border-top-right-radius: 130px;
+    padding: 50px;
+}
+#review-card  p {
+     color: #e2e7edf7;
+}

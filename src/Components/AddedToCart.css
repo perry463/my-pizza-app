@@ -1,0 +1,21 @@
+.added-popup {
+  position: fixed;
+  bottom: 80px; /* above navbar */
+  right: 20px;
+  background-color: #ff4d4d;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  animation: popUp 1.2s ease forwards;
+  z-index: 2000;
+}
+
+@keyframes popUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(-20px); }
+  100% { opacity: 0; transform: translateY(-40px); }
+}

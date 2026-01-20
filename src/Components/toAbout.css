@@ -1,0 +1,102 @@
+.to-about {
+    text-align: center;
+    font-family: sans-serif;
+}
+.to-about > h1 {
+      color: #e2e7edf7;
+}
+.to-about > p {
+    padding: 30px;
+    color: #edb047;
+}
+.to-about > #link-to-about{
+    background-color:  rgb(245, 104, 16);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 51px;
+    border-radius: 20px;
+    text-align: center;
+    transition: .3s;
+}
+#link-to-about:hover {
+     background-color:  rgb(188, 85, 11);
+}
+
+
+/* ToAbout Responsiveness */
+
+@media screen and (min-width: 1200px) {
+    .to-about {
+        width: 100vw;
+    }
+    .to-about > h1 {
+        font-size: 2.5rem;
+        /* width: 100px; */
+    }
+
+    .to-about > p {
+        /* padding: 25px; */
+        text-align: center;
+        margin: auto;
+        font-size: 1.1rem;
+    }
+
+    #link-to-about {
+        padding: 10px 45px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #link-to-about {
+        width: 50%;
+    }
+    .to-about {
+        padding: 20px;
+    }
+
+    .to-about > h1 {
+        font-size: 2rem;
+    }
+
+    .to-about > p {
+        font-size: 0.67rem;
+        padding: 20px;
+    }
+
+
+    #link-to-about {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 12px 0;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 768px){
+    #link-to-about {
+        width: 50%;
+        margin: auto;
+    }
+    .to-about > p {
+        line-height: 25px;
+        width: 100%;
+        font-weight: 500;
+        padding: 20px;
+    }
+    .to-about > h1 {
+        font-size: 1.5rem;
+    }
+
+    .to-about > p {
+        font-size: 0.95rem;
+        padding: 15px;
+    }
+
+    #link-to-about {
+        font-size: 0.9rem;
+        padding: 10px 0;
+        border-radius: 15px;
+    }
+}

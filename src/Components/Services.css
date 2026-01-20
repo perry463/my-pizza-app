@@ -1,0 +1,225 @@
+.services {
+    text-align: center;
+}
+.services-wrap {
+    padding: 20px;
+}
+
+#services-hero{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+}
+.img-text {
+    text-align: center;
+    margin-top: -250px;
+    position: relative;
+    z-index: 999;
+    color: #Fff;
+}
+.img-text > p {
+    font-size: larger;
+    letter-spacing: 0.92px;
+}
+
+.offer-cards {
+    text-align: start;
+    width: 460px;
+    background-color: #424752;
+    border: 1px solid #5a5555;
+    border-radius: 15px;
+    box-shadow: 0px 0px 35px #0f0101;
+    display: inline-block;
+    margin: 40px;
+}
+#offer-card-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    /* object-position: center top; */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#offer-card-details {
+    padding: 20px 15px;
+    color: #fff;
+    font-family: sans-serif;
+}
+#offer-card-details > h2{
+    padding: 0;
+    margin: 0;
+}
+/* #offer-card-details > p {
+    line-height: 20px;
+} */
+#offer-card-details > button {
+    width: 150px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: orangered;
+    color: #fff;
+    font-weight: 600;
+}
+.about-contact {
+    color: #fff;
+}
+.about-contact >p{
+    font-family: sans-serif;
+    margin-top: -20px;
+}
+#about-contact-info {
+    display: inline-block;
+    margin: 20px;
+      box-shadow: 0px 0px 35px #130604;
+    width: 250px;
+    font-family: sans-serif;
+}
+#about-contact-link {
+    margin: auto;
+    display: block;
+    padding: 10px;
+    background-color: orangered;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 7px;
+    width: 150px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+
+
+/* Services Responsive */
+@media screen and (max-width: 1200px) {
+   #services-hero{ 
+        display: none;
+    }
+    .img-text {
+        position: relative;
+        display: block;
+        margin-bottom: 40px;
+        margin-top: -30px;
+        top: 40px;
+    }
+
+    .offer-cards {
+        width: 350px;
+        margin: 20px;
+    }
+
+    .about-contact #about-contact-info {
+        width: 200px;
+        margin: 15px;
+        box-shadow: 0px 0px 20px #130604;
+    }
+}
+
+@media screen and (max-width: 768px) {
+       .about-story-section {
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .about-story-img > img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
+
+    .about-story-details {
+        width: 100%;
+    }
+
+    .offer-cards {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .about-contact #about-contact-info {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #about-contact-link {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .img-text h1 {
+        font-size: 1.5rem;
+    }
+    .img-text p {
+        font-size: 1rem;
+    }
+
+    .offer-cards {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .about-story-details > p {
+        font-size: 0.9rem;
+    }
+
+    #about-contact-link {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* ===== KEYFRAMES ===== */
+@keyframes fadeDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== HERO HEADING ===== */
+.img-text h1 {
+    animation: fadeDown 1s ease forwards;
+}
+.img-text p {
+    animation: fadeDown 1s ease 0.3s forwards;
+    opacity: 0;
+}
+
+/* ===== OFFER CARDS ===== */
+.offer-cards {
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.offer-cards:nth-child(2) { animation-delay: 0.4s; }
+.offer-cards:nth-child(3) { animation-delay: 0.6s; }
+.offer-cards:nth-child(4) { animation-delay: 0.8s; }
+.offer-cards:nth-child(5) { animation-delay: 1s; }
+
+/* ===== CONTACT SECTION ===== */
+.about-contact {
+    opacity: 0;
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.about-contact > p {
+    animation: fadeUp 1s ease 0.4s forwards;
+    opacity: 0;
+}
+
+#about-contact-link {
+    animation: fadeUp 1s ease 0.6s forwards;
+    opacity: 0;
+}

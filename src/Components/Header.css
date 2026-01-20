@@ -1,0 +1,124 @@
+/* ================= Header base ================= */
+.header {
+  width: 100%;
+  height: 66px; /* header height */
+  background-color: #7fc0fd;  
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+/* Hide/show animation */
+.header.hide {
+  transform: translateY(-100%);
+}
+.header.show {
+  transform: translateY(0);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-logo h1 {
+  font-size: 1.8rem;
+  color: #ff4d4d;
+}
+
+/* Desktop nav links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  transition: max-height 0.5s ease;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Cart badge */
+.cart-count {
+  background-color: #ff4d4d;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  margin-right: 5px;
+  font-size: 0.8rem;
+}
+
+/* Hamburger toggle */
+.nav-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.nav-toggle.open {
+  transform: rotate(90deg);
+}
+
+/* ================= Mobile styles ================= */
+@media (max-width: 768px) {
+
+  /* Hamburger visible */
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Mobile dropdown menu */
+  .nav-links {
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+    width: 100%;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+    background-color: #3f8bd3;    
+    position: absolute;        /* below header */
+    top: 60px;                 /* header height */
+    left: 0;
+    z-index: 999;
+  }
+
+  /* Menu open */
+  .nav-links.open {
+    max-height: 500px; /* adjust depending on number of links */
+    transition: max-height 0.5s ease;
+  }
+
+  .nav-links li {
+    padding: 12px 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-links li a {
+    font-size: 1.1rem;
+    color: #333;
+  }
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+  color: #ff4d4d;
+  transition: color 0.3s;
+}
+
+/* ================= Main content spacing ================= */
+.main-content {
+  padding-top: 60px; /* ensures header does not cover page */
+}
